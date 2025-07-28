@@ -22,7 +22,6 @@ const phrases = [
 "« Il ne faut pas opposer les énergies renouvelables au nucléaire. »",
 "« Il ne faut pas opposer le Français et le Corse. »",
 "« Il ne faut pas opposer épargne et consommation. »",
-"« Il ne faut pas opposer les mobilités les unes aux autres mais les organiser de manière complémentaire. »",
 "« Il ne faut pas opposer élargissement et intégration. »",
 "« Il ne faut pas opposer la question des ZFE à la question de la santé. »",
 "« Il ne faut pas opposer religion et liberté. »",

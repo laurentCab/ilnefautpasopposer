@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Générateur de phrase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14pt;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #phrase {
+      text-align: center;
+      max-width: 80%;
+    }
+  </style>
+</head>
+<body>
+  <div id="phrase">Chargement...</div>
+
+  <script>
+    fetch('/api/phrase')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('phrase').textContent = data.phrase;
+      })
+      .catch(() => {
+        document.getElementById('phrase').textContent = "Erreur lors du chargement.";
+      });
+  </script>
+</body>
+</html>

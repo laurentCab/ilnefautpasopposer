@@ -9,28 +9,45 @@
       font-size: 14pt;
       font-weight: bold;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-    }
-    #phrase {
       text-align: center;
+    }
+
+    #phrase {
+      margin-bottom: 20px;
       max-width: 80%;
+    }
+
+    button {
+      font-size: 14pt;
+      font-family: Arial, sans-serif;
+      padding: 10px 20px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <div id="phrase">Chargement...</div>
+  <button onclick="chargerPhrase()">Recharger</button>
 
   <script>
-    fetch('/api/phrase')
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('phrase').textContent = data.phrase;
-      })
-      .catch(() => {
-        document.getElementById('phrase').textContent = "Erreur lors du chargement.";
-      });
+    function chargerPhrase() {
+      fetch('/api/phrase')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('phrase').textContent = data.phrase;
+        })
+        .catch(() => {
+          document.getElementById('phrase').textContent = "Erreur lors du chargement.";
+        });
+    }
+
+    // Charger une phrase au départ
+    chargerPhrase();
   </script>
 </body>
 </html>
+

@@ -1,7 +1,7 @@
 const phrases = [
-"&#171; Il ne faut pas opposer économie et ruralité. &#187;",
-"&#171; Il ne faut pas opposer les villes aux villages. &#187;",
-"&#171; Il ne faut pas opposer police et justice. &#187; &#187;",
+"« Il ne faut pas opposer économie et ruralité. &#187;",
+"« Il ne faut pas opposer les villes aux villages. &#187;",
+"« Il ne faut pas opposer police et justice. &#187; &#187;",
 "&#171; Il ne faut pas opposer la liberté à la sécurité. &#187;",
 "&#171; Il ne faut pas opposer les lignes TGV aux petites lignes. &#187;",
 "&#171; Il ne faut pas opposer tennis et padel. &#187;",
